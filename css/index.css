@@ -135,16 +135,22 @@ body {
   height: 100%;
 }
 body {
+  line-height: 1.5rem;
+  font-size: 62.5%;
   padding: 0 3%;
 }
-body p {
+body p,
+body li,
+body a {
   font-family: 'Hind', sans-serif;
+  font-size: 1rem;
 }
 body h1,
 body h2,
 body h3,
 body h4 {
   font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
 }
 nav {
   display: flex;
@@ -159,39 +165,53 @@ nav a {
 .img-div {
   display: flex;
   max-width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .img-div img {
   width: 40%;
-}
-.cta {
-  display: flex;
-  max-width: 100%;
-  flex-direction: column;
-  padding: 2% 0;
 }
 .cta button {
   width: 7%;
   font-family: 'Fjalla One', sans-serif;
   background-color: grey;
 }
+.cta .cta-text {
+  display: flex;
+  max-width: 100%;
+  padding: 3% 0;
+  flex-direction: column;
+  align-items: stretch;
+}
 .middle-section {
   display: flex;
   max-width: 100%;
+  margin: 3% 0;
   justify-content: space-around;
 }
-.footer-div {
+.middle-section .box1 h2,
+.middle-section .box2 h2 {
+  text-decoration: underline;
+}
+footer .footer-title {
+  text-align: center;
+  text-decoration: underline;
+}
+footer .footer-div {
   display: flex;
   max-width: 100%;
-  margin: 1% 0;
-  justify-content: flex-start;
+  margin: 2% 0;
+  justify-content: space-evenly;
 }
-.footer-div .columns {
+footer .footer-div .columns {
   margin: 0 3%;
+}
+footer .footer-div .columns h4 {
+  text-decoration: underline;
 }
 .contact-div {
   margin-top: 2% ;
 }
 .copyright {
-  text-align: centerv;
+  margin-top: 2%;
+  text-align: center;
 }

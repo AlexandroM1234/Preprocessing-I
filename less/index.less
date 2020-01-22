@@ -62,8 +62,10 @@ html, body {
 @main-font:'Hind', sans-serif;
 
 @title-font:'Fjalla One', sans-serif;
+ 
+@title-size:2rem;
 
-
+@text-size:1rem;
 
 .container(){
 
@@ -74,14 +76,20 @@ html, body {
 
 body{
 
+	line-height: 1.5rem;
+
+	font-size: 62.5%;
+
 	padding: 0 3%;
 	
-	p{
-		font-family: @main-font
+	p, li, a{
+		font-family: @main-font;
+		font-size:@text-size;
 	}//closes paragraph styling
 
 	h1, h2, h3, h4{
 		font-family: @title-font;
+		font-size: @title-size;
 	}//closes header styling
 
 }// Closes body styling
@@ -101,7 +109,7 @@ nav{
 
 .img-div{
 	.container();
-	justify-content: center;
+	justify-content: space-evenly;
 
 	img{
 		width: 40%;
@@ -109,39 +117,66 @@ nav{
 }
 
 .cta{
-	.container();
-	flex-direction: column;
-	padding: 2% 0;
-
 	button{
 		width: 7%;
 		font-family: @title-font;
 		background-color: grey;
 	}
+
+	.cta-text{
+		.container();
+		padding: 3% 0;
+		flex-direction: column;
+		align-items: stretch;
+
+	}
 }
 
 .middle-section{
 	.container();
+	margin: 3% 0;
 	justify-content: space-around;
-	
-}
 
-.footer-div{
-	.container();
-	margin: 1% 0;
-	justify-content: flex-start;
+	.box1, .box2{
+		h2{
+			text-decoration: underline;
 
-	.columns{
-		margin: 0 3%;
+		}
+
+		.container(){
+			padding: 3%;
+		}
 	}
 
 }
 
+footer{
+
+	.footer-title{
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.footer-div{
+		.container();
+		margin: 2% 0;
+		justify-content:space-evenly;
+
+		.columns{
+			margin: 0 3%;
+			h4{
+				text-decoration: underline;
+			}
+		}
+
+	}
+}
 .contact-div{
 	margin-top:2% ;
 }
 
 .copyright{
-	text-align: centerv;
+	margin-top: 2%;
+	text-align: center;
 }
 
