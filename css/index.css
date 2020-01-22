@@ -134,3 +134,62 @@ html,
 body {
   height: 100%;
 }
+body {
+  padding: 0 3%;
+}
+body p {
+  font-family: 'Hind', sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: 'Fjalla One', sans-serif;
+}
+nav {
+  display: flex;
+  max-width: 100%;
+  padding: 2% 0;
+  justify-content: flex-end;
+}
+nav a {
+  margin: 0 1%;
+  font-family: 'Fjalla One', sans-serif;
+}
+.img-div {
+  max-width: 100%;
+}
+.img-div img {
+  width: 40%;
+}
+.cta {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 2% 0;
+}
+.cta button {
+  width: 7%;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: grey;
+}
+.middle-section {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+}
+.footer-div {
+  display: flex;
+  max-width: 100%;
+  margin: 1% 0;
+  justify-content: flex-start;
+}
+.footer-div .columns {
+  margin: 0 3%;
+}
+.contact-div {
+  margin-top: 2% ;
+}
+.copyright {
+  text-align: centerv;
+}

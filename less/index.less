@@ -56,3 +56,90 @@ table {
 html, body {
 	height: 100%;
 }
+
+// Code Starts Here
+
+@main-font:'Hind', sans-serif;
+
+@title-font:'Fjalla One', sans-serif;
+
+
+
+.container(){
+
+	display:flex;
+	max-width: 100%;
+
+}
+
+body{
+
+	padding: 0 3%;
+	
+	p{
+		font-family: @main-font
+	}//closes paragraph styling
+
+	h1, h2, h3, h4{
+		font-family: @title-font;
+	}//closes header styling
+
+}// Closes body styling
+
+
+nav{
+	.container();
+	padding: 2% 0;
+	justify-content: flex-end;
+
+	a{
+		margin: 0 1%;
+		font-family: @title-font;
+	}
+
+}
+
+.img-div{
+	max-width: 100%;
+
+	img{
+		width: 40%;
+	}
+}
+
+.cta{
+	.container();
+	flex-direction: column;
+	padding: 2% 0;
+
+	button{
+		width: 7%;
+		font-family: @title-font;
+		background-color: grey;
+	}
+}
+
+.middle-section{
+	.container();
+	justify-content: space-around;
+}
+
+.footer-div{
+	.container();
+	margin: 1% 0;
+	justify-content: flex-start;
+
+	.columns{
+		margin: 0 3%;
+	}
+
+}
+
+.contact-div{
+	margin-top:2% ;
+}
+
+.copyright{
+	text-align: centerv;
+}
+
