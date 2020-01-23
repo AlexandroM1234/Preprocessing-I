@@ -136,7 +136,10 @@ body {
 }
 body {
   font-size: 62.5%;
+  line-height: 2rem;
   padding: 0 3%;
+  background-color: #0D3B66;
+  color: #FAF0CA;
 }
 body p,
 body li,
@@ -161,6 +164,22 @@ nav a {
   margin: 0 1%;
   font-family: 'Fjalla One', sans-serif;
 }
+nav a:hover {
+  color: #EE964B;
+}
+nav a:visited {
+  color: #FAF0CA;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 .img-div {
   display: flex;
   max-width: 100%;
@@ -168,6 +187,11 @@ nav a {
 }
 .img-div img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .img-div img {
+    display: none;
+  }
 }
 .cta button {
   width: 7%;
@@ -181,6 +205,16 @@ nav a {
   flex-direction: column;
   align-items: stretch;
 }
+@media (max-width: 500px) {
+  .cta .cta-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cta button {
+    width: 10%;
+  }
+}
 .middle-section {
   display: flex;
   max-width: 100%;
@@ -190,10 +224,22 @@ nav a {
 .middle-section .box1 h2,
 .middle-section .box2 h2 {
   text-decoration: underline;
+  text-decoration-color: #F4D35E;
+}
+@media (max-width: 500px) {
+  .middle-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 footer .footer-title {
   text-align: center;
   text-decoration: underline;
+  text-decoration-color: #F4D35E;
 }
 footer .footer-div {
   display: flex;
@@ -206,6 +252,7 @@ footer .footer-div .columns {
 }
 footer .footer-div .columns h4 {
   text-decoration: underline;
+  text-decoration-color: #F4D35E;
 }
 .contact-div {
   margin-top: 2% ;

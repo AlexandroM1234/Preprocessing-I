@@ -74,11 +74,24 @@ html, body {
 
 }
 
+.small-screen(){
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: 1rem;
+
+}
+
 
 body{
 	font-size: 62.5%;
-
+	line-height: 2rem;
 	padding: 0 3%;
+	background-color:#0D3B66 ;
+	color: #FAF0CA;
 	
 	p, li, a{
 		font-family: @main-font;
@@ -103,7 +116,21 @@ nav{
 		font-family: @title-font;
 	}
 
+	a:hover{
+		color:#EE964B;
+	}
+
+	a:visited{
+		color:#FAF0CA;
+	}
+
+	@media(max-width:500px){
+
+		.small-screen();
+
+	}
 }
+
 
 .img-div{
 	.container();
@@ -112,13 +139,21 @@ nav{
 	img{
 		width: 40%;
 	}
+
+	@media(max-width:500px){
+		img{
+			display: none;
+		}
+	}
 }
 
 .cta{
+
 	button{
 		width: 7%;
 		font-family: @title-font;
 		background-color: grey;
+
 	}
 
 	.cta-text{
@@ -126,6 +161,18 @@ nav{
 		padding: 3% 0;
 		flex-direction: column;
 		align-items: stretch;
+	}
+	
+	@media(max-width:500px){
+		.cta-text{
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		button{
+			width: 10%;
+		}
 
 	}
 }
@@ -138,7 +185,12 @@ nav{
 	.box1, .box2{
 		h2{
 			text-decoration: underline;
+			text-decoration-color:#F4D35E ;
 		}
+	}
+
+	@media(max-width:500px){
+		.small-screen();
 	}
 
 }
@@ -148,6 +200,7 @@ footer{
 	.footer-title{
 		text-align: center;
 		text-decoration: underline;
+		text-decoration-color:#F4D35E ;
 	}
 
 	.footer-div{
@@ -159,6 +212,7 @@ footer{
 			margin: 0 3%;
 			h4{
 				text-decoration: underline;
+				text-decoration-color:#F4D35E ;
 			}
 		}
 
