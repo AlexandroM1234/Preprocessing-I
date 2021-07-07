@@ -1,1 +1,260 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 62.5%;
+  line-height: 2rem;
+  padding: 0 3%;
+  background-color: #0D3B66;
+  color: #FAF0CA;
+}
+body p,
+body li,
+body a {
+  font-family: 'Hind', sans-serif;
+  font-size: 1rem;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+  max-width: 100%;
+  padding: 2% 0;
+  justify-content: flex-end;
+}
+nav a {
+  margin: 0 1%;
+  font-family: 'Fjalla One', sans-serif;
+}
+nav a:hover {
+  color: #EE964B;
+}
+nav a:visited {
+  color: #FAF0CA;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+.img-div {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+.img-div img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .img-div img {
+    display: none;
+  }
+}
+.cta button {
+  width: 7%;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: grey;
+}
+.cta .cta-text {
+  display: flex;
+  max-width: 100%;
+  padding: 3% 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 500px) {
+  .cta .cta-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cta button {
+    width: 10%;
+  }
+}
+.middle-section {
+  display: flex;
+  max-width: 100%;
+  margin: 3% 0;
+  justify-content: space-evenly;
+}
+.middle-section .box1 h2,
+.middle-section .box2 h2 {
+  text-decoration: underline;
+  text-decoration-color: #F4D35E;
+}
+@media (max-width: 500px) {
+  .middle-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+footer .footer-title {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #F4D35E;
+}
+footer .footer-div {
+  display: flex;
+  max-width: 100%;
+  margin: 2% 0;
+  justify-content: space-evenly;
+}
+footer .footer-div .columns {
+  margin: 0 3%;
+}
+footer .footer-div .columns h4 {
+  text-decoration: underline;
+  text-decoration-color: #F4D35E;
+}
+.contact-div {
+  margin-top: 2% ;
+  text-align: center;
+}

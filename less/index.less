@@ -54,6 +54,172 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+
+// Code Starts Here
+
+@main-font:'Hind', sans-serif;
+
+@title-font:'Fjalla One', sans-serif;
+ 
+@title-size:2rem;
+
+@text-size:1rem;
+
+.container(){
+
+	display:flex;
+	max-width:100%;
+
+}
+
+.small-screen(){
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: 1rem;
+
+}
+
+
+body{
+	font-size: 62.5%;
+	line-height: 2rem;
+	padding: 0 3%;
+	background-color:#0D3B66 ;
+	color: #FAF0CA;
+	
+	p, li, a{
+		font-family: @main-font;
+		font-size:@text-size;
+	}//closes paragraph styling
+
+	h1, h2, h3, h4{
+		font-family: @title-font;
+		font-size: @title-size;
+	}//closes header styling
+
+}// Closes body styling
+
+
+nav{
+	.container();
+	padding: 2% 0;
+	justify-content: flex-end;
+
+	a{
+		margin: 0 1%;
+		font-family: @title-font;
+
+		&:hover{
+			color:#EE964B;
+		}
+	
+		&:visited{
+			color:#FAF0CA;
+		}
+	}
+
+	@media(max-width:500px){
+
+		.small-screen();
+
+	}
+}
+
+
+.img-div{
+	.container();
+	justify-content: space-evenly;
+
+	img{
+		width: 40%;
+	}
+
+	@media(max-width:500px){
+		img{
+			display: none;
+		}
+	}
+}
+
+.cta{
+
+	button{
+		width: 7%;
+		font-family: @title-font;
+		background-color: grey;
+
+	}
+
+	.cta-text{
+		.container();
+		padding: 3% 0;
+		flex-direction: column;
+		align-items: stretch;
+	}
+	
+	@media(max-width:500px){
+		.cta-text{
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		button{
+			width: 10%;
+		}
+
+	}
+}
+
+.middle-section{
+	.container();
+	margin: 3% 0;
+	justify-content: space-evenly;
+
+	.box1, .box2{
+		h2{
+			text-decoration: underline;
+			text-decoration-color:#F4D35E ;
+		}
+	}
+
+	@media(max-width:500px){
+		.small-screen();
+	}
+
+}
+
+footer{
+
+	.footer-title{
+		text-align: center;
+		text-decoration: underline;
+		text-decoration-color:#F4D35E ;
+	}
+
+	.footer-div{
+		.container();
+		margin: 2% 0;
+		justify-content:space-evenly;
+
+		.columns{
+			margin: 0 3%;
+			h4{
+				text-decoration: underline;
+				text-decoration-color:#F4D35E ;
+			}
+		}
+
+	}
+}
+.contact-div{
+	margin-top:2% ;
+	text-align: center;
 }
 
